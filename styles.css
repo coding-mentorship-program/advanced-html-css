@@ -1,0 +1,87 @@
+/* normalize our css */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+:root {
+	--jons-blue: #067ff8;
+	--jons-white: #f1f1f1;
+	--site-padding: 2rem;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: var(--jons-white);
+	/* height: 300px; */
+}
+
+nav {
+}
+
+nav > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+nav > ul > li {
+	float: left;
+}
+
+nav > ul > li a:hover {
+	background-color: #111;
+}
+
+nav > ul > li > a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+section {
+	background-color: var(--jons-blue);
+}
+
+#flexbox-items {
+	display: flex;
+	justify-content: space-around;
+
+	height: 400px;
+	padding: 2rem 0;
+}
+
+#flexbox-items > article {
+	width: 200px;
+	height: 100px;
+	border: #111 solid 2px;
+	border-radius: 10px;
+}
+
+#left {
+background-color: darkcyan;
+}
+
+#middle {
+	background-color: darkgoldenrod;
+}
+
+#right {
+	background-color: darkkhaki;
+}
+
+footer {
+	background-color: var(--jons-blue);
+	margin-top: var(--site-padding);
+}
